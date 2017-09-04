@@ -12,3 +12,5 @@ services:
   integration:
     image: my-registry:55000/aspgenerator:integration-${BUILD_NUMBER}
     build: .
+    environment:
+            - TEAMCITY_PROJECT_NAME
